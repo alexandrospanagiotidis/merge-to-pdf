@@ -1,0 +1,10 @@
+---
+version: '3.8'
+
+services:
+  merge-ghostscript:
+    build:
+      context: ./variants/ghostscript
+    volumes:
+      - ./input:/input:ro
+      - ./output:/output:rw
